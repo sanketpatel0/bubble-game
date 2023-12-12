@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #FCF5ED;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-child{
+    height: 75%;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 40px 0px;
+}
+
+.p-top{
+    height: 80px;
+    width: 100%;
+    background-color: #F4BF96;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.p-top-child{
+    height: 80px;
+    width: 80%;
+    background-color: #F4BF96;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+.button{
+    
+    width: 20%;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.elem{
+    width: 25%;
+    /* height: 50%; */
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box{
+    width: 20%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    padding: 0.2rem;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-btm{
+    height: calc(100% - 80px);
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+
+
+.bubble{
+    height: 50px;
+    width: 50px;
+    background-color: #CE5A67;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.btn{
+   padding: 0.8rem 2.5rem;
+   cursor: pointer;
+   border: none;
+   background-color: #CE5A67;
+}
+
+.btn:hover{
+    background-color: #FCF5ED;
+    border-radius: 20px;
+    transition: 0.5s
+ }
+
+.bubble:hover{
+    background-color: #1F1717;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 870px) {
+    .elem{
+        flex-direction: column;
+    }
+    .box{
+        width: 50%;
+    }
+    .p-top{
+        flex-direction: column;
+        height: 150px;
+        padding: 0.5rem 0rem;
+    }
+  }
