@@ -56,8 +56,17 @@ document.querySelector('.p-btm').addEventListener("click", function (d) {
         incScore();
         bubble();
         newHit();
+    }else {
+        vibrateDevice()
     }
 })
+
+function vibrateDevice() {
+    if ('vibrate' in navigator) {
+      
+      navigator.vibrate(200);
+    } 
+  }
 
 function clicked() {
     timer = 60;
